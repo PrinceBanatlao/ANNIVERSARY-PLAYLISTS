@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Music Playlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Blurred background -->
+  <div id="bg-blur"></div>
+
+  <div class="player">
+    <img id="cover" src="image/image1.png" alt="Cover Image">
+    <h2 id="music-title">Multo</h2>
+    <audio id="audio" src="music/music1.mp3"></audio>
+
+    <div id="duration">0:00</div>
+
+    <div class="controls">
+      <button id="back">⏮</button>
+      <button id="play">▶️</button>
+      <button id="pause" style="display:none;">⏸</button>
+      <button id="next">⏭</button>
+      <button id="shuffle">🔀</button>
+    </div>
+
+    <div class="playlist">
+      <h3>Songs List</h3>
+      <ul id="song-list">
+        <!-- Auto-filled by JavaScript -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
